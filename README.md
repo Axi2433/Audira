@@ -1,3 +1,5 @@
+# AUDIRA
+
 Are you tired of apps that want to take money from you over and over again for listening to your favorite songs? Or do they bombard you with ads in the middle of your favorite song? So, you've come to the perfect place!
 
 Audira is a project that is supposed to prevent this! Audira is a self-hosted music player that can play whatever YOU want! 
@@ -5,3 +7,33 @@ Audira is a project that is supposed to prevent this! Audira is a self-hosted mu
 It can do everything your favorite apps can do, and even more! Apart from playing music, the second main idea is its great possibilities for personalization, from colors, backgrounds and even fonts and much more! 
 
 So what are you waiting for? We invite you to take advantage of it!
+
+
+### Supported formats:
+FLAC
+MP3
+M4A
+OPUS
+
+# Customization
+
+Out of the box you have the ability to customize the colors of all buttons and elements, swap fonts and upload your own photos as backgrounds, and we also have easy import and export of your settings!
+
+# installation
+
+### Fedora linux (compiling from source not avaiable yet)
+
+Dependencies:
+```
+sudo dnf install rust cargo webkit2gtk4.1-devel openssl-devel curl wget file libappindicator-gtk3-devel librsvg2-devel rpm-build
+```
+Compiling:
+```
+git clone https://github.com/Axi2433/Audira
+cd Audira
+bash
+./build-sidecars.sh
+cargo tauri dev
+```
+
+### Windows (still in progress)
