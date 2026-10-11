@@ -10,18 +10,22 @@ So what are you waiting for? We invite you to take advantage of it!
 
 
 ### Supported formats:
-FLAC
-MP3
-M4A
-OPUS
+- FLAC
+- MP3
+- M4A
+- OPUS
 
 # Customization
 
-Out of the box you have the ability to customize the colors of all buttons and elements, swap fonts and upload your own photos as backgrounds, and we also have easy import and export of your settings!
+Out of the box you have the ability to customize the colors of all buttons and elements, swap fonts and upload your own photos as backgrounds, and we also have easy import and export of your settings to maybe share your friends or just keep that in safe place when something bad happens!
 
 # installation
 
 ### Fedora linux (compiling from source not avaiable yet)
+
+# Switching
+
+"But I have all my songs on spotify and I don't want to download them all over again." It doesn't get any easier! We have an easy option to import your favorite playlists through .csv files!
 
 Dependencies:
 ```
@@ -30,10 +34,10 @@ sudo dnf install rust cargo webkit2gtk4.1-devel openssl-devel curl wget file lib
 Compiling:
 ```
 git clone https://github.com/Axi2433/Audira
-cd Audira
+cd Audira/src-tauri/
 bash
 ./build-sidecars.sh
-cargo tauri dev
+cargo tauri build
 ```
 
 ### Windows (still in progress)
